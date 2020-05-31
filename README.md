@@ -30,7 +30,7 @@ javac *.java -cp dist/lib/JGameGrid.jar:.
 java -cp dist/lib/JGameGrid.jar:. Whist
 java -cp dist/lib/JGameGrid.jar:. Whist ../smart.properties
 ```
-
+4-legal-video
 ### Features
 
 **Design pattern:**
@@ -49,13 +49,16 @@ The lead and follow should have different strategies:
 - The "Lead" strategies: When the player is leading a new trick, a high rank card is expected to play to ensure there is a chance for the player to win and continue the leading
 - The "Follow" strategies: If the player determines the lost of the trick is unavoidable, the player should discard the most useless card – the card of the lowest rank. Otherwise, a high rank card is played to guarantee a potential winning
 There are four cases when the follow strategy is applied:
+
 1. The trick contains trumps cards and the player still owns the cards of the lead suit: It is clear that this is a lost trick. The player should discard a useless card.
 
 Note: if the lead suit happens to be the trumps suit. Case 2 will be selected
+
 2. The trick does not contain any trumps card and the player still owns the cards of the lead suit: 
 a. If the player is at the end of the trick, a card greater than winning card is played. 
 b. Otherwise a highest rank card is played. Note: if the best card cannot win the trick, the discard strategy is applied.
  
 3. The trick contain trumps cards and the player owns no cards of the lead suit: A trumps card greater than the current winning card will be played. If there exists no such card, the discard strategy is applied.
+
 4. The trick does not contain any trumps card and the player owns no cards of the lead suit: It is clear that the player should play a trumps card to increase the winning probability. But if the player is out of trumps cards, the discard strategy is applied.
 
