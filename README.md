@@ -30,7 +30,7 @@ javac *.java -cp dist/lib/JGameGrid.jar:.
 java -cp dist/lib/JGameGrid.jar:. Whist
 java -cp dist/lib/JGameGrid.jar:. Whist ../smart.properties
 ```
-4-legal-video
+
 ### Features
 
 **Design pattern:**
