@@ -187,7 +187,7 @@ public class Whist extends CardGame {
     // Initialize strategies array based on player types
     private void initStrategies() {
         PlayStrategryFactory factory = PlayStrategryFactory.getInstance();
-        strategies = new PlayStrategy[nbPlayers];
+        strategies = new IPlayStrategy[nbPlayers];
         int i = 0;
         while (i < nbPlayers) {
             for (int j = 0; j < nbInteractive; j++) {
