@@ -2,9 +2,9 @@
 
 ### Summary
 
-Whist is a simeple-version of Whist card game that built with Java. 
+Whist is a simple-version of Whist card game that built with Java. 
 
-It implements the JGameGrid framework and can play againt two types of NPC players (Legal/Smart):
+It implements the JGameGrid framework and can play against two types of NPC players (Legal/Smart):
 - Legal NPC: plays a random selection from all cards that can legally (consistent with the rules) be played
 - Smart NPC: a player that records all relevant information and makes a reasonable, legal choice based on that information.
 
